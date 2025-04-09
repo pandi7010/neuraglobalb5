@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Audio Listening Portal</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background: linear-gradient(to right, #a8e063, #56ab2f);
+            margin: 0;
+            padding: 0;
+            color: #333;
+            text-align: center;
+        }
+        body::before {
+            content: '';
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.2);
+            z-index: -1;
+        }
+        header {
+            background: #2d6a4f;
+            padding: 20px;
+            font-size: 1.8em;
+            text-transform: uppercase;
+            color: white;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+        }
+        nav {
+            margin-top: 10px;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            font-size: 1em;
+            transition: color 0.3s ease;
+        }
+        nav a:hover {
+            color: #a8e063;
+        }
+        main {
+            padding: 40px 20px;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+        }
+        .audio-section {
+            background: rgba(255, 255, 255, 0.9);
+            border-radius: 12px;
+            padding: 20px;
+            width: 300px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+            transition: transform 0.3s ease;
+        }
+        .audio-section:hover {
+            transform: scale(1.05);
+        }
+        h2 {
+            color: #2d6a4f;
+            font-size: 1.4em;
+        }
+        audio {
+            width: 100%;
+            margin-top: 10px;
+            outline: none;
+            border: 2px solid #2d6a4f;
+            border-radius: 8px;
+            padding: 5px;
+        }
+        .tips-section {
+            background: rgba(255, 255, 255, 0.9);
+            padding: 20px;
+            margin: 20px auto;
+            width: 80%;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+        }
+        .tips-section ul {
+            text-align: left;
+            list-style-type: square;
+            margin: 0 auto;
+            width: fit-content;
+            color: #333;
+        }
+        footer {
+            background: #2d6a4f;
+            padding: 15px;
+            font-size: 0.9em;
+            color: white;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+            box-shadow: 0 -2px 6px rgba(0, 0, 0, 0.3);
+        }
+        .social-links {
+            margin-top: 10px;
+        }
+        .social-links a {
+            color: white;
+            margin: 0 10px;
+            font-size: 1.2em;
+            transition: color 0.3s ease;
+        }
+        .social-links a:hover {
+            color: #a8e063;
+        }
+        html {
+            scroll-behavior: smooth;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Communication Portal</h1>
+        
+    </header>
+    
+    <main>
+        <section class="audio-section" id="effective-communication">
+            <h2><i class="fas fa-comments"></i> Conversation Listening</h2>
+            <audio controls>
+                <source src="English conversation.mp3" type="audio/mpeg">
+                Your browser does not support the audio element.
+            </audio>
+        </section>
+        
+        <section class="audio-section" id="public-speaking-tips">
+            <h2><i class="fas fa-microphone"></i> Story Listening</h2>
+            <audio controls>
+                <source src="secret to win lazziness.mp3" type="audio/mpeg">
+                Your browser does not support the audio element.
+            </audio>
+        </section>
+        
+        <section class="tips-section" id="communication-tips">
+            <h2><i class="fas fa-lightbulb"></i> Tips to Improve Communication Skills</h2>
+            <ul>
+                <li>Practice active listening and avoid interrupting.</li>
+                <li>Maintain eye contact and use open body language.</li>
+                <li>Think before speaking and be clear and concise.</li>
+                <li>Expand your vocabulary and improve articulation.</li>
+                <li>Engage in conversations regularly to build confidence.</li>
+                <li>Read books, watch speeches, and learn from great communicators.</li>
+            </ul>
+        </section>
+    </main>
+    
+    <footer>
+        <p>Developed by: Pandiselvam | &copy; 2025 Neura Global</p>
+        <div class="social-links">
+            <a href="https://twitter.com" target="_blank"><i class="fab fa-twitter"></i></a>
+            <a href="https://facebook.com" target="_blank"><i class="fab fa-facebook"></i></a>
+            <a href="https://linkedin.com" target="_blank"><i class="fab fa-linkedin"></i></a>
+        </div>
+    </footer>
+</body>
+</html>
